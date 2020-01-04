@@ -69,7 +69,7 @@
    (true-or-false? nil (equalp  '(:a . :b) '(:a . :doesnt-match)))
    (true-or-false? t (equalp #\S #\S))
    (true-or-false? t (equalp "Foo" "Foo"))
-   (true-or-false? equalp (t "Foo" (copy-seq "Foo")))
+   (true-or-false? t (equalp "Foo" (copy-seq "Foo")))
    (true-or-false? t (equalp "FOO" "Foo")))
 
 (define-test test-numeric-equal
